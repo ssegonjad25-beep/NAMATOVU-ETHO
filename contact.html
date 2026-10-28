@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Beauty Parlour - Contact Us</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #ede8dc; color: #010e14; line-height: 1.6; }
+        header { background-color: #f7b4b4; box-shadow: 0 2px 10px rgba(4, 237, 85, 0.05); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-size: 1.6rem; font-weight: 700; color: #522837; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 1.2rem; }
+        .nav-links a { text-decoration: none; color: #0f021a; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #610024; font-weight: bold; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .page-header { text-align: center; margin-bottom: 3rem; }
+        .page-header h1 { font-size: 2.5rem; color: #080003; margin-bottom: 1rem; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .contact-info { background: #e3b4b4; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0e6ed; }
+        .contact-info h2 { color: #880e4f; margin-bottom: 1.2rem; font-size: 1.5rem; }
+        .contact-info address { font-style: normal; margin-bottom: 1.5rem; color: #0f0f0f; }
+        .social-links { display: flex; gap: 1rem; margin-top: 1.5rem; }
+        .social-links a { color: #d81b60; text-decoration: none; font-weight: 600; }
+        .contact-form-box { background: #ebc6c6; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0e6ed; }
+        .contact-form-box h2 { color: #880e4f; margin-bottom: 1.2rem; font-size: 1.5rem; }
+        .form-group { margin-bottom: 1.2rem; }
+        label { display: block; margin-bottom: 0.4rem; font-weight: 600; color: #444; }
+        input, textarea { width: 100%; padding: 0.7rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.95rem; font-family: inherit; }
+        .btn-submit { background-color: #d81b60; color: #e0d1ed; border: none; padding: 0.7rem 1.5rem; border-radius: 20px; font-weight: 600; cursor: pointer; }
+        .map-section { width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(234, 215, 215, 0.05); border: 1px solid #2f0221; }
+        .map-section iframe { width: 100%; height: 350px; border: 0; display: block; }
+        footer { background-color: #dec6c6; color: #deb0c4; text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 1rem; } .nav-links { flex-wrap: wrap; justify-content: center; } .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Glow & Grace</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Contact Glow & Grace</h1>
+            <p>We are happy to hear from our customers. The contact page provides convenient ways for visitors to reach the beauty parlour.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <address>
+                    <p><strong>Address:</strong> Kampala, Uganda</p>
+                    <p><strong>Phone:</strong> +25672192835</p>
+                    <p><strong>Email:</strong> info@ namatovuetho26 mru123.ac.ug</p>
+                    <p><strong>Opening Hours:</strong> Monday-Saturday, 8:00 AM–7:00 PM</p>
+                </address>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">TikTok</a>
+                </div>
+            </div>
+
+            <div class="contact-form-box">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">Your Email</label>
+                        <input type="email" id="c-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-message">Message</label>
+                        <textarea id="c-message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="map-section">
+            <img src="C:\Users\Clare\Desktop\MACRINAH ETHO\poster.jpg">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow & Grace Beauty Parlour. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

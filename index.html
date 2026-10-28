@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Beauty Parlour - Home</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f18d8d; color: #ecc0c0; line-height: 1.6; }
+        header { background-color: #eebebe; box-shadow: 0 2px 10px rgba(239, 207, 207, 0.05); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-size: 1.6rem; font-weight: 700; color: #0c010b; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 1.2rem; }
+        .nav-links a { text-decoration: none; color: #1a1818; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #16030b; font-weight: bold; }
+        .hero { background: linear-gradient(rgba(228, 219, 222, 0.05), rgba(246, 228, 235, 0.15)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; padding: 6rem 2rem; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; background: rgba(252, 235, 235, 0.95); padding: 3rem 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .hero h1 { font-size: 2.8rem; color: #f04780; margin-bottom: 1rem; }
+        .hero p { font-size: 1.15rem; color: #140101; margin-bottom: 2rem; }
+        .btn { display: inline-block; background-color: #eabaca; color: #ffffff; padding: 0.8rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; transition: background 0.3s ease; }
+        .btn:hover { background-color: #f1b5cf; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .section-title { text-align: center; font-size: 2rem; color: #eabfbf; margin-bottom: 2.5rem; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background-color: #d81b60; display: block; margin: 0.5rem auto 0; border-radius: 2px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .card { background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); text-align: center; padding: 1.5rem; border: 1px solid #f0e6ed; }
+        .card h3 { color: #f5dae3; margin-bottom: 0.8rem; }
+        .special-offers { background-color: #fce4ec; border-radius: 12px; padding: 3rem 2rem; margin-top: 2rem; text-align: center; }
+        .special-offers h2 { color: #880e4f; margin-bottom: 1rem; }
+        footer { background-color: #222222; color: #ffffff; text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 1rem; } .nav-links { flex-wrap: wrap; justify-content: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Glow & Grace</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Glow & Grace Beauty Parlour</h1>
+                <p>Your destination for professional beauty, hair, and personal-care services. Our goal is to help every client feel confident, comfortable, and beautifully cared for.</p>
+                <a href="appointments.html" class="btn">Book an Appointment</a>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="section-title">Featured Services</h2>
+            <div class="services-grid">
+                <article class="card">
+                    <h3>Hair Styling & Care</h3>
+                    <p>Expert hair styling, custom braiding, treatments, and wig installations tailored to your look.</p>
+                </article>
+                <article class="card">
+                    <h3>Nail Care</h3>
+                    <p>Relaxing manicures and pedicures with beautiful nail art and long-lasting polish finishes.</p>
+                </article>
+                <article class="card">
+                    <h3>Makeup & Glam</h3>
+                    <p>Professional makeup applications for weddings, special events, or everyday elegance.</p>
+                </article>
+                <article class="card">
+                    <h3>Facials & Skincare</h3>
+                    <p>Rejuvenating skincare treatments and eyebrow shaping to keep your skin fresh and glowing.</p>
+                </article>
+            </div>
+        </section>
+        <section class="container">
+            <div class="special-offers">
+                <h2>Special Seasonal Offer!</h2>
+                <p>Get 15% off on all Combo Packages (Hair Styling + Manicure & Pedicure) every Wednesday!</p>
+                <a href="appointments.html" class="btn">Claim Offer & Book Now</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Glow & Grace Beauty Parlour. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

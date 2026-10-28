@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Beauty Parlour - Book Appointment</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e2dadc; color: #011306; line-height: 1.6; }
+        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-size: 1.6rem; font-weight: 700; color: #d81b60; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 1.2rem; }
+        .nav-links a { text-decoration: none; color: #555555; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #d81b60; font-weight: bold; }
+        .container { max-width: 700px; margin: 0 auto; padding: 4rem 2rem; }
+        .page-header { text-align: center; margin-bottom: 2.5rem; }
+        .page-header h1 { font-size: 2.5rem; color: #d81b60; margin-bottom: 1rem; }
+        form { background: #e8666c; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0e6ed; }
+        .form-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #444; }
+        input, select, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; font-family: inherit; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #d81b60; }
+        .btn-group { display: flex; gap: 1rem; margin-top: 2rem; }
+        button { flex: 1; padding: 0.8rem; border: none; border-radius: 25px; font-weight: 600; font-size: 1rem; cursor: pointer; }
+        .btn-submit { background-color: #d81b60; color: #ffffff; }
+        .btn-reset { background-color: #e0e0e0; color: #333; }
+        footer { background-color: #222222; color: #ffffff; text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 1rem; } .nav-links { flex-wrap: wrap; justify-content: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Glow & Grace</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="appointments.html" class="active">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Book an Appointment</h1>
+            <p>Customers can use the appointment page to request a beauty service at a convenient date and time.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+256 XXX XXX XXX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Choose Service</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select a Service --</option>
+                    <option value="hair">Hair Styling & Treatment</option>
+                    <option value="braiding">Braiding & Natural Care</option>
+                    <option value="nails">Manicure & Pedicure</option>
+                    <option value="makeup">Makeup for Events</option>
+                    <option value="facial">Facials & Skincare</option>
+                    <option value="brows">Eyebrow Shaping</option>
+                    <option value="wig">Wig Installation & Styling</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any specific requests or notes..."></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow & Grace Beauty Parlour. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

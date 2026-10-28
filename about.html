@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Beauty Parlour - About Us</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:#efdfe0; color: #333333; line-height: 1.6; }
+        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); position: sticky; top: 0; z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .logo { font-size: 1.6rem; font-weight: 700; color: #d81b60; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 1.2rem; }
+        .nav-links a { text-decoration: none; color: #555555; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #d81b60; font-weight: bold; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .page-header { text-align: center; margin-bottom: 3rem; }
+        .page-header h1 { font-size: 2.5rem; color: #260bf4; margin-bottom: 1rem; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem; }
+        .about-text h2 { color: #1a0101; margin-bottom: 1rem; font-size: 1.8rem; }
+        .about-text p { color: #06000d; margin-bottom: 1.5rem; }
+        .about-image img { width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .values-section { background-color: #fce4ec; padding: 3rem; border-radius: 12px; margin-top: 2rem; }
+        .values-section h2 { color: #880e4f; text-align: center; margin-bottom: 2rem; font-size: 1.8rem; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; list-style: none; }
+        .values-grid li { background: #ffffff; padding: 1.5rem; border-radius: 8px; text-align: center; font-weight: 600; color: #d81b60; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+        footer { background-color: #222222; color: #ffffff; text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 1rem; } .nav-links { flex-wrap: wrap; justify-content: center; } .about-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Glow & Grace</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>About Glow & Grace</h1>
+        
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Our Story & Mission</h2>
+                <p>Glow & Grace Beauty Parlour is a modern beauty centre dedicated to quality service and customer satisfaction. We combine creativity, professionalism, and attention to detail to provide a relaxing beauty experience.</p>
+                <p><strong>Mission:</strong> To provide affordable, professional, and reliable beauty services.</p>
+                <p><strong>Vision:</strong> To become a trusted and leading beauty parlour in the community.</p>
+            </div>
+            <div class="about-image">
+                <img src="interior.jpeg" alt="Beauty Parlour Interior">
+            </div>
+        </div>
+
+        <div class="values-section">
+            <h2>Our Core Values</h2>
+            <ul class="values-grid">
+                <li>Professionalism</li>
+                <li>Cleanliness</li>
+                <li>Creativity</li>
+                <li>Respect</li>
+                <li>Customer Care</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow & Grace Beauty Parlour. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
